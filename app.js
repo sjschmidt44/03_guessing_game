@@ -107,7 +107,7 @@ while (numberGuess !== myNumber && i < 3) {
 }
 //if they guess right
 if (numberGuess === myNumber && i < 3) {
-  alert('Congrats! You guessed that' + myNumber + ' is my number!');
+  alert('Congrats! You guessed that ' + myNumber + ' is my number!');
   numberCorrect++;
 }
 //if they run out of guesses
@@ -119,17 +119,31 @@ console.log('numberCorrect', numberCorrect);
 //7th Question
 var myVacations = ['GREECE', 'ARUBA', 'BELIZE', 'BAHAMAS', 'ENGLAND', 'MEXICO' ];
 //ask question
-var vacation = prompt('Where have I been on vacation?')
+var vacation = prompt('Where have I been on vacation?');
 //force uppercase
-var vacationsUppercase = vacation.toUpperCase;
+var vacationsUppercase = vacation.toUpperCase();
+console.log(vacation);
+console.log(vacationsUppercase);
 
-for (i = 0; i < myVacations.length; i++) {
-  if (myVacations[i] === vacationsUppercase) {
-    alert('Congrats! You\'re right! I have been to ' + vacation);
+
+var guesses = 0;
+var isCorrect = false;
+while (guesses < 5 && isCorrect === false) {
+  for (var j = 0; i < myVacations.length; j++ ) {
+    if (vacationsUppercase === myVacations[j]){
+      isCorrect = true;
+    }
   }
-  if (myVacations[i] !== vacationsUppercase) {
-    vacation = prompt('Try again!');
+  if (isCorrect === false){
+    vacation = prompt('Try Again!');
+    vacationsUppercase = vacation.toUpperCase();
+    console.log('vacation', vacation);
   }
+  guesses++;
+}
+if (isCorrect === true){
+  alert('You got it!');
+  numberCorrect++;
 }
 
-
+alert('You got ' + numberCorrect + ' right!');
