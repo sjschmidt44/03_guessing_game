@@ -1,4 +1,8 @@
 /* CSS!! */
+* {
+    outline: 1px solid blue;
+    box-sizing: border-box;
+}
 body {
     background-color: pink;
     color: darkslategrey;
@@ -7,27 +11,9 @@ body {
 }
 
 main {
-    padding-left: 5px;
-}
-
-h1 {
-    color: rgb(49, 52, 54);
-    font-size: 50px;
-    padding: 0px;
-    margin-bottom: 5px;
-    margin-top: 8px;
     
 }
 
-h2 {
-    font-size: 25px;
-    padding: 0px;
-    margin-top: 5px;
-    color: rgb(49, 52, 54);
-    margin-bottom: 8px;
-    
-
-}
 h3 {
     font-size: 20px;
     color: rgb(54, 77, 78);
@@ -39,21 +25,12 @@ li {
 p {
     font-family: sans-serif;
 }
-#experience {
-    color: rgb(71, 29, 29);
-}
 
-#education {
-    color: rgb(5, 5, 48);
-}
-
-#goals {
-    color: rgb(48, 20, 66);
-}
 
 header {
     background-color: plum;
-    padding-top: 2px;
-    padding-left: 5px;
-    padding-bottom: 5px;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    color: rgb(49, 52, 54);
 }
