@@ -1,6 +1,6 @@
 /* CSS!! */
 * {
-    outline: 1px solid blue;
+    /* outline: 1px solid blue; */
     box-sizing: border-box;
 }
 body {
@@ -11,8 +11,10 @@ body {
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 25px;
     color: rgb(54, 77, 78);
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
 
 li {
@@ -26,7 +28,7 @@ header {
     background-color: plum;
     text-align: center;
     padding: 5px;
-    margin: 5px;
+    margin: 15px 50px;
     color: rgb(49, 52, 54);
 }
 
@@ -36,7 +38,25 @@ header li {
     padding-left: 5px;
     padding-right:5px;
     text-align: center;
+    margin: 3px;
 }
 nav {
     text-align: center;
+    padding: 0px;
 }
+
+h1 {
+    font-size: 35px;
+    margin-bottom: 3px;
+}
+h2{
+    font-size: 25px;
+    margin-top: 2px;
+}
+
+section {
+    background-color: grey;
+    margin: 15px 50px;
+    padding: 5px;
+}
+
