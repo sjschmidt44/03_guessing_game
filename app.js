@@ -70,3 +70,21 @@ if (uppercaseResponseFive === 'YES' || uppercaseResponseFive === 'Y'){
 } else {
   alert('You\'re right! I prefer Fall to Summer!');
 }
+
+//sixth question
+var myNumber = 17;
+console.log('myNumber', myNumber);
+var numberGuess = parseInt(prompt('Hey, ' + userName + ' can you guess my favorite number?'));
+console.log('numberGuess', numberGuess);
+while (numberGuess !== myNumber) {
+  if (numberGuess > myNumber){
+    parseInt(prompt(numberGuess +' is too high! Guess again!'));
+  }
+  if (numberGuess < myNumber) {
+    parseInt(prompt(numberGuess + ' is too low! Guess again!'));
+  }
+}
+if (numberGuess === myNumber) {
+  alert('Congrats! You guessed that' + myNumber + ' is my number!')
+}
+
