@@ -7,7 +7,8 @@ console.log('userName', userName);
 alert('Hi ' + userName + '! Let\'s play a game! Answer each question with YES/Yes/y or NO/No/n based on your best guess about me!');
 
 //score variable
-var numberCorrect = 0
+var numberCorrect = 0;
+
 //first question
 var responseOne = prompt('Is purple my favorite color?');
 console.log('responseOne', responseOne);
@@ -89,6 +90,8 @@ console.log('myNumber', myNumber);
 var numberGuess = parseInt(prompt('Hey, ' + userName + ' can you guess my favorite number?'));
 console.log('numberGuess', numberGuess);
 var i = 0;
+console.log('i',i);
+//if they guess wrong
 while (numberGuess !== myNumber && i < 3) {
   if (numberGuess > myNumber){
     numberGuess = parseInt(prompt(numberGuess +' is too high! Guess again!'));
@@ -102,12 +105,31 @@ while (numberGuess !== myNumber && i < 3) {
   }
 
 }
+//if they guess right
 if (numberGuess === myNumber && i < 3) {
   alert('Congrats! You guessed that' + myNumber + ' is my number!');
   numberCorrect++;
 }
+//if they run out of guesses
 if (i === 3) {
   alert('Sorry! You\'re out of tries! My number was ' + myNumber + '!');
 }
 console.log('numberCorrect', numberCorrect);
+
+//7th Question
+var myVacations = ['GREECE', 'ARUBA', 'BELIZE', 'BAHAMAS', 'ENGLAND', 'MEXICO' ];
+//ask question
+var vacation = prompt('Where have I been on vacation?')
+//force uppercase
+var vacationsUppercase = vacation.toUpperCase;
+
+for (i = 0; i < myVacations.length; i++) {
+  if (myVacations[i] === vacationsUppercase) {
+    alert('Congrats! You\'re right! I have been to ' + vacation);
+  }
+  if (myVacations[i] !== vacationsUppercase) {
+    vacation = prompt('Try again!');
+  }
+}
+
 
