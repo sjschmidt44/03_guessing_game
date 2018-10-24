@@ -55,8 +55,35 @@ h2{
 }
 
 section {
-    background-color: grey;
-    margin: 15px 50px;
+    background-color: rgba(128, 128, 128, 0.493);
+    margin-top: 15px;
+    margin-bottom: 15px;
     padding: 5px;
 }
+
+#bio {
+    margin-left: 200px;
+    margin-right: 70px;
+}
+
+#experience {
+    margin-left: 70px;
+    margin-right: 200px;
+}
+
+#education {
+    margin-left: 200px;
+    margin-right: 70px;
+}
+
+#goals {
+    margin-left: 70px;
+    margin-right: 200px;
+}
+
+#topten {
+    margin-left: 200px;
+    margin-right: 70px;
+} 
+
 
