@@ -129,7 +129,7 @@ console.log(vacationsUppercase);
 var guesses = 0;
 var isCorrect = false;
 while (guesses < 5 && isCorrect === false) {
-  for (var j = 0; i < myVacations.length; j++ ) {
+  for (var j = 0; j < myVacations.length; j++ ) {
     if (vacationsUppercase === myVacations[j]){
       isCorrect = true;
     }
@@ -146,4 +146,11 @@ if (isCorrect === true){
   numberCorrect++;
 }
 
-alert('You got ' + numberCorrect + ' right!');
+
+if (numberCorrect <= 3) {
+  alert('You only got ' + numberCorrect + ' right! You don\'t know me very well!');
+} else if (numberCorrect >= 6 ) {
+  alert('You got ' + numberCorrect + ' correct! We must know each other really well!');
+} else {
+  alert('You got ' + numberCorrect + ' right! You know me okay! We should chat more!');
+}
