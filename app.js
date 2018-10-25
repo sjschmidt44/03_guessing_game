@@ -117,7 +117,7 @@ if (i === 3) {
 console.log('numberCorrect', numberCorrect);
 
 //7th Question
-var myVacations = ['GREECE', 'ARUBA', 'BELIZE', 'BAHAMAS', 'ENGLAND', 'MEXICO' ];
+var myVacations = ['GREECE', 'ARUBA', 'BELIZE', 'BAHAMAS', 'ENGLAND', 'MEXICO', 'THE BAHAMAS' ];
 //ask question
 var vacation = prompt('Where have I been on vacation?');
 //force uppercase
@@ -141,12 +141,17 @@ while (guesses < 5 && isCorrect === false) {
   }
   guesses++;
 }
+
 if (isCorrect === true){
-  alert('You got it!');
+  alert('Correct! I have been to Belize, Aruba, Mexico, The Bahamas, England and Greece');
   numberCorrect++;
 }
 
+if (isCorrect === false && j >= 5) {
+  alert('Sorry! You\'re out of tries! I have been to Belize, Aruba, Mexico, The Bahamas, England and Greece');
+}
 
+//Score card!!
 if (numberCorrect <= 3) {
   alert('You only got ' + numberCorrect + ' right! You don\'t know me very well!');
 } else if (numberCorrect >= 6 ) {
