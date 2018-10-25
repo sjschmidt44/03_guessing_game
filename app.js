@@ -164,3 +164,6 @@ if (numberCorrect <= 3) {
 } else {
   alert('You got ' + numberCorrect + ' right! You know me okay! We should chat more!');
 }
+
+
+var YES = 'Scott was here!';
