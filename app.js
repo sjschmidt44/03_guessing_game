@@ -111,9 +111,10 @@ if (numberGuess === myNumber && i < 3) {
   numberCorrect++;
 }
 //if they run out of guesses
-if (i === 3) {
+if (i === 4) {
   alert('Sorry! You\'re out of tries! My number was ' + myNumber + '!');
 }
+
 console.log('numberCorrect', numberCorrect);
 
 //7th Question
@@ -127,7 +128,7 @@ console.log(vacationsUppercase);
 
 
 var guesses = 0;
-var isCorrect = false;
+var isCorrect = false; //is their answer correct? false=no true=yes
 while (guesses < 5 && isCorrect === false) {
   for (var j = 0; j < myVacations.length; j++ ) {
     if (vacationsUppercase === myVacations[j]){
@@ -138,6 +139,7 @@ while (guesses < 5 && isCorrect === false) {
     vacation = prompt('Try Again!');
     vacationsUppercase = vacation.toUpperCase();
     console.log('vacation', vacation);
+    console.log('vacationsUppercase', vacationsUppercase);
   }
   guesses++;
 }
