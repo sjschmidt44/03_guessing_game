@@ -32,9 +32,9 @@ var uppercaseResponseTwo = responseTwo.toUpperCase();
 console.log('uppercaseResponseTwo', uppercaseResponseTwo);
 //second answer
 if (uppercaseResponseTwo === 'YES' || uppercaseResponseTwo === 'Y' ){
-  alert('Sorry! I don\'t like eggplan! Better luck next time!');
+  alert('Sorry! I don\'t like eggplant! Better luck next time!');
 } else {
-  alert('You\'re right! I think eggplan is gross!');
+  alert('You\'re right! I think eggplant is gross!');
   numberCorrect++;
 }
 console.log('numberCorrect', numberCorrect);
